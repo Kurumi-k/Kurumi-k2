@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://photos1.blogger.com/blogger/3772/3486/1600/Burnt%20Buns.0.jpg');
+      background-size: cover;
+      color: brown;
+    }
+    a {
+      color: brown;
+    }
+    h1 {
+      font-family: 'Merriweather', serif;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid black;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,100,.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+	}  
+  	button {
+  		float: left;
+  		margin-right: 10px;
+  	}
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      color: blue;
+      background: brown;
+    }
+    body {
+      background: brown
+      
+      }
+    @media (max-width: 500px) {
+      h1 {
+        font-family:'Crimson Text', serif;
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://images.adagio.com/images2/custom_blends/171384.jpg">
+    <h1>Dilir's logic</h1>
+    <ul>
+      <li><a href="https://www.homedepot.com/p/7-3-4-in-x-2-1-4-in-x-3-3-4-in-Concrete-Brick-25100130/100350234?source=shoppingads&locale=en-US&pla&mtc=SHOPPING-CM-CML-GGL-D22-022_009_CONCRETE-NA-NA-NA-PMAX-2996810-NA-NA-NA-NBR-NA-NA-NEW-PMAX&cm_mmc=SHOPPING-CM-CML-GGL-D22-022_009_CONCRETE-NA-NA-NA-PMAX-2996810-NA-NA-NA-NBR-NA-NA-NEW-PMAX-71700000114008640--&gclid=EAIaIQobChMIq7ur_MXBggMVE9fICh3HNgiSEAQYAiABEgJLgfD_BwE&gclsrc=aw.ds">bricks</a></li>
+      <li><a href="https://www.target.com/p/little-debbie-honey-buns-breakfast-pastries-6ct-10-6oz/-/A-14996404?ref=tgt_adv_xsp&AFID=google&fndsrc=tgtao&DFA=71700000108264733&CPNG=PLA_Bakery%2BDeli%2BShopping_Local%7CBakery%2BDeli_Ecomm_Food_Bev&adgroup=SC_Bakery%2BDeli&LID=700000001170770pgs&LNM=PRODUCT_GROUP&network=g&device=c&location=9067608&targetid=pla-510494420083&gclid=EAIaIQobChMIz6uBjMbBggMV_U1HAR0iegvFEAQYASABEgLUTPD_BwE&gclsrc=aw.ds">honeybuns</a></li>
+      <li><a href="https://www.google.com/shopping/product/1536590560671974340?lsf=seller:23221,store:15097409798353794344,lsfqd:0&prds=oid:12258903509212635353&q=microwave+oven&hl=en&ei=PWNSZb_DBuOcptQP_Jy3oAI&sts=14&lsft=gclid:EAIaIQobChMI3NuUlsbBggMVT0RyCh3NUApWEAQYASABEgISbPD_BwE">Microwaves</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>the perfect way to microwave honeybuns and bricks
+  </h2>
+    <p>put the honeybuns and bricks into the microwave and then set the timer for about 5 minutes and enjoy your extremely hot honeybuns and bricks.</p>
+    <button class="likeButtons">Like</button>
+	 <div class="numLikes">0</div>
+  </article>
+  <article>
+    <h2>The lion king</h2>
+    <p>when chewbbacca started attacking the british empire sir pennywise the III Jr. had slayed the enderdragon creating the one piece.</p>
+    <button class="likeButtons">Like</button>
+	 <div class="numLikes">0</div>
+  </article>
+  <article>
+    <h2>Matthew 15:5</h2>
+    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
+    <button class="likeButtons">Like</button>
+	 <div class="numLikes">0</div>
+  </article>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+  
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+	  
+    apiKey: "AIzaSyD5iq7Yn2CQd7FZQH9HvUsiPsnoUiWy4CA",
+    authDomain: "testing-2-f78a6.firebaseapp.com",
+    projectId: "testing-2-f78a6",
+    storageBucket: "testing-2-f78a6.appspot.com",
+    messagingSenderId: "134320530080",
+    appId: "1:134320530080:web:8f8977178635c1b0aadfc5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+  const LikeButtons = document.querySelectorAll('.likeButtons')
+  const numLikes = document.querySelectorAll('.numLikes')
+  
+  for (let i=0; i<LikeButtons.length; i++) {
+	  LikeButtons[i].addEventListener('click', function(){ Like(i) })
+	  onValue(ref(db, "/article "+i+"/numLikes"), (snapshot) => {
+		    let data = snapshot.val();
+		    numLikes[i].innerHTML = data
+	  });
+	  
+
+	  
+  }
+
+  function Like(i) {
+	  const numberLikes = parseInt(numLikes[i].innerHTML) + 1
+	  set(ref(db, "article " + i), {
+		  numLikes: numberLikes,
+	  });
+  }
+  
+  
+</script>  
+</body>
